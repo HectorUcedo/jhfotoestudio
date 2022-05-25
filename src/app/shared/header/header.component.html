@@ -12,14 +12,19 @@
       </svg>
     </label>
     <div class="ae-container-fluid rk-topbar">
-      <h1 class="rk-logo"><a href="index.html">JH Foto Estudio<sup></sup></a></h1>
+      <h1 class="rk-logo">
+        <a routerLink="">JHFotoEstudio</a>
+      </h1>
       <nav class="rk-navigation">
         <ul class="rk-menu">
-          <li class="rk-menu__item"><a href="index.html" class="rk-menu__link">Home</a>
+          <!-- <li class="active rk-menu__item"> -->
+          <li routerLinkActive="active" class="rk-menu__item">
+            <a routerLink="home" class="rk-menu__link">Home</a>
           </li>
-          <li class="active rk-menu__item"><a href="portfolio.html" class="rk-menu__link">Portfolio</a>
-          </li>
-          <li class="rk-menu__item"><a href="blog.html" class="rk-menu__link">Blog</a>
+          <!-- <li class="active rk-menu__item">
+            <a href="portfolio.html" class="rk-menu__link">Portfolio</a>
+          </li> -->
+          <!-- <li class="rk-menu__item"><a href="blog.html" class="rk-menu__link">Blog</a>
           </li>
           <li class="rk-menu__item"><a href="#0" class="rk-menu__link">Pages</a>
             <nav class="rk-menu__sub">
@@ -29,8 +34,10 @@
                 <li class="rk-menu__item"><a href="design-styles.html" class="rk-menu__link">Design Styles</a></li>
               </ul>
             </nav>
-          </li>
-          <li class="rk-menu__item"><a href="contact.html" class="rk-menu__link">Contact Us</a>
+          </li> -->
+          <!-- <li class="rk-menu__item"> -->
+          <li routerLinkActive="active" class="rk-menu__item">
+            <a routerLink="about" class="rk-menu__link">About</a>
           </li>
         </ul>
         <form class="rk-search">
