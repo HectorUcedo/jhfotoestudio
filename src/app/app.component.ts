@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { InfoPaginaService } from './services/info-pagina.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'jhfotoestudio';
+  //title = 'jhfotoestudio';
+
+  constructor( public infoPaginaService: InfoPaginaService ){
+    
+    // Leer el archivo Json
+    
+
+  }
+
 }
