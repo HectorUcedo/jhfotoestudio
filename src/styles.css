@@ -1,9 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
 
 /*
+|| SVG Animation
+*/
+svg path,
+svg rect{
+  fill: black;
+}
+
+
+/* Animaciones*/
+/*
 || Copiamos esta animación de https://www.udemy.com/course/recursos-web-plugins-y-utilidades/learn/lecture/4923478#overview
 */
-
 .animated {
     -webkit-animation-duration: 1s;
     animation-duration: 1s;
