@@ -24,9 +24,7 @@ export class ProductosService {
 
     this.http.get('https://base-jh-default-rtdb.firebaseio.com/productos_idx.json')
         .subscribe( (resp: any) => {
-
-        
-      console.log(resp);
+      //console.log(resp);
       this.productos = resp;
       this.cargando = false; //Loading
       
@@ -36,6 +34,10 @@ export class ProductosService {
 
         });
 
+  }
+
+  getProducto( id: string ) {
+    return this.http.get(`https://base-jh-default-rtdb.firebaseio.com/productos/${ id }.json`)
   }
 
 }

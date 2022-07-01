@@ -35,9 +35,10 @@
             class="ae-masonry ae-masonry-md-2 ae-masonry-xl-4">
 
         <a *ngFor="let producto of productosService.productos"
-            routerLink="/item" class="animated fadeIn rk-item ae-masonry__item">
+            [routerLink]="['/item', producto.cod]" class="animated fadeIn rk-item ae-masonry__item">
           <img src="assets/productos/{{ producto.url }}.jpg" alt="">
-          <div class="item-meta">
+          <!-- Aseguramos poner el routerlink en la meta, así se puede hacer clic en cualquier parte de la imagen-->
+          <div [routerLink]="['/item', producto.cod]" class="item-meta">
             <h2>{{ producto.titulo }}</h2>
             <p>{{ producto.categoria }}</p>
           </div>
