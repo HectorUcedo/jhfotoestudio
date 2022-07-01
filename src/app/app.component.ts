@@ -11,7 +11,7 @@ export class AppComponent {
   //title = 'jhfotoestudio';
 
   constructor( public infoPaginaService: InfoPaginaService,
-               public productosservice: ProductosService ){
+               public productosService: ProductosService ){
     // Leer el archivo Json
 
   }
