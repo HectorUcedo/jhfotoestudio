@@ -1,0 +1,1 @@
+svg path,svg rect{fill:#000}.animated{animation-duration:1s;animation-fill-mode:both}@media (prefers-reduced-motion){.animated{animation:unset!important;transition:none!important}}@keyframes fadeIn{0%{opacity:0}to{opacity:1}}.fadeIn{animation-name:fadeIn}
