@@ -28,8 +28,17 @@
   <link rel="stylesheet" href="assets/css/urku.css">
   <link rel="stylesheet" href="assets/css/estilos.css">
   <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
-</head>
-  <!-- <META HTTP-EQUIV="REFRESH" CONTENT=";URL=/#/home">   -->
+
+
+  <title>reCAPTCHA demo: Simple page</title>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <script>
+    function onSubmit(token) {
+      document.getElementById("demo-form").submit();
+    }
+  </script>
+
+
 </head>
 
 <body class="top-fixed">
