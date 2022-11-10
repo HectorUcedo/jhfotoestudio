@@ -9,5 +9,6 @@ export interface InfoPagina {
   twitter?: string;
   instagram?: string;
   tblr?: string;
+  tiktok?: string;
   equipo_trabajo?: any[];
 }
